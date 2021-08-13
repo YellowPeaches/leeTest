@@ -29,8 +29,16 @@ public class huashang {
                     String s = pas.nextToken();
                     line += s + ",";
                 }
-                System.out.println(line);
-                writer.write(line + "\r\n");
+                if (line.contains("装,二")) {
+                    String newLine = line.replace("装,二", "装二");
+                    System.out.println(newLine);
+                    writer.write(newLine + "\r\n");
+                }
+//
+                else {
+                    System.out.println(line);
+                    writer.write(line + "\r\n");
+                }
             }
 
             writer.close();
