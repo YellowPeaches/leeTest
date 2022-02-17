@@ -7,7 +7,7 @@ public class _45 {
 
     public static int jump(int[] nums) {
         int len = nums.length;
-        int ans=0;
+        int ans = 0;
         for (int i = 0; i < len; i++) {
 
         }

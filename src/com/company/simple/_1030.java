@@ -39,13 +39,13 @@ public class _1030 {
 
     class Solution {
         public int[][] allCellsDistOrder(int R, int C, int r0, int c0) {
-            int ans[][] = new int[R*C][2];
-            int temp=0;
+            int ans[][] = new int[R * C][2];
+            int temp = 0;
             for (int i = 0; i < R; i++) {
                 for (int j = 0; j < C; j++) {
-                  ans[temp][0]=Math.abs(i-r0);
-                  ans[temp][1]=Math.abs(j-c0);
-                  temp++;
+                    ans[temp][0] = Math.abs(i - r0);
+                    ans[temp][1] = Math.abs(j - c0);
+                    temp++;
                 }
             }
             return ans;

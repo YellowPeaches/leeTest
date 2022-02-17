@@ -26,15 +26,15 @@ public class txt2excel {
                 String lineTxt = null;
                 while ((lineTxt = bufferedReader.readLine()) != null) {
                     String[] temp = lineTxt.split(",");
-                    s.wBiaoShi=temp[0];
-                    s.inputKey=temp[1];
-                    s.name=temp[2];
-                    s.price=Double.valueOf(temp[3])/100;
-                    s._key=temp[4];
-                    s.badTime=temp[5];
-                    s.storeId=temp[6];
-                    s.biaoShi1=temp[7];
-                    s.biaoShi2=temp[8];
+                    s.wBiaoShi = temp[0];
+                    s.inputKey = temp[1];
+                    s.name = temp[2];
+                    s.price = Double.valueOf(temp[3]) / 100;
+                    s._key = temp[4];
+                    s.badTime = temp[5];
+                    s.storeId = temp[6];
+                    s.biaoShi1 = temp[7];
+                    s.biaoShi2 = temp[8];
                     list.add(s);
                     //System.out.println(s.price);
                 }

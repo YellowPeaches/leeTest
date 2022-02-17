@@ -8,6 +8,7 @@ public class zhuban {
         System.out.println(getMainBordId_windows());
         System.out.println(getWindowsMACAddress());
     }
+
     public static String getWindowsMACAddress() {
         String address = "";
         try {
@@ -28,6 +29,7 @@ public class zhuban {
         }
         return address;
     }
+
     public static String getOSName() {
         return System.getProperty("os.name").toLowerCase();
     }
@@ -58,7 +60,7 @@ public class zhuban {
             }
             input.close();
         } catch (Exception e) {
-            System.out.println("----"+e);
+            System.out.println("----" + e);
         }
         return result.trim();
     }

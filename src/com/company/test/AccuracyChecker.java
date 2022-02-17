@@ -29,7 +29,7 @@ public class AccuracyChecker {
             String[] split = ans.split(",");
             String name = "";
             for (int j = 0; j < split.length; j++) {
-                name+=skuMap.get(split[j])+" ";
+                name += skuMap.get(split[j]) + " ";
             }
             System.out.println(name + "  " + xmlPath.get(i));
             writeResult("D:\\aaaimage\\ans.txt", name + "\n");
@@ -39,7 +39,7 @@ public class AccuracyChecker {
         }
         System.out.println((rightResult / xmlPath.size()) * 100 + "%");
         System.out.print("耗时(ms): ");
-        System.out.println(System.currentTimeMillis()-lasting);
+        System.out.println(System.currentTimeMillis() - lasting);
     }
 
     //获取路径下所有文件

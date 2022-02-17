@@ -3,7 +3,7 @@ package com.company.normal;
 public class _1337 {
 
     public static void main(String[] args) {
-        int[][] mat = {{1,0,0,0},{1,1,1,1},{1,0,0,0},{1,0,0,0}};
+        int[][] mat = {{1, 0, 0, 0}, {1, 1, 1, 1}, {1, 0, 0, 0}, {1, 0, 0, 0}};
         int[] ints = kWeakestRows(mat, 2);
         for (int i = 0; i < 2; i++) {
             System.out.println(ints[i]);
@@ -26,14 +26,14 @@ public class _1337 {
 
         int index = 0;
         for (int x = 0; ; x++) {
-            for (int i = 0; i < temp.length &&index<k; i++) {
+            for (int i = 0; i < temp.length && index < k; i++) {
                 if (temp[i] == x) {
                     ans[index] = i;
                     index++;
                 }
 
             }
-            if(index>=k){
+            if (index >= k) {
                 break;
             }
         }

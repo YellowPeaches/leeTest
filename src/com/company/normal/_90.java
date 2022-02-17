@@ -4,8 +4,8 @@ import java.util.*;
 
 public class _90 {
     public static void main(String[] args) {
-        Solution solution=new Solution();
-        int []a={1,2,8,31};
+        Solution solution = new Solution();
+        int[] a = {1, 2, 8, 31};
         System.out.println(Solution.subsetsWithDup(a));
     }
 }

@@ -3,7 +3,7 @@ package com.company.normal;
 public class 面试题_0805 {
 
     public static void main(String[] args) {
-        System.out.println(multiply(4,9));
+        System.out.println(multiply(4, 9));
     }
 
     public static int multiply(int A, int B) {

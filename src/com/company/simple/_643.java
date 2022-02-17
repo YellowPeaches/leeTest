@@ -2,7 +2,7 @@ package com.company.simple;
 
 public class _643 {
     public static void main(String[] args) {
-        int[] nums = {-1,-9};
+        int[] nums = {-1, -9};
         double ans = findMaxAverage(nums, 1);
         System.out.println(ans);
     }

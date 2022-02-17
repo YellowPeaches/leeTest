@@ -8,7 +8,7 @@ public class _204 {
 
     static class Solution {
         public int countPrimes(int n) {
-            if(n==0||n==1){
+            if (n == 0 || n == 1) {
                 return 0;
             }
             int N = n;
@@ -28,7 +28,7 @@ public class _204 {
 //                System.out.println(su[i]);
 //            }
 
-            return cnt-2;
+            return cnt - 2;
         }
     }
 }

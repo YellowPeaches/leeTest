@@ -1,6 +1,6 @@
 package com.company.test;
 
-class JoinTest implements Runnable{
+class JoinTest implements Runnable {
 
     public static int a = 0;
 
@@ -16,9 +16,9 @@ class JoinTest implements Runnable{
         Thread t = new Thread(r);
         t.start();
         //t.join(); //加入join()
-        for (int i=0; i<30000000; i++) {
-            if(i%100==0)
-            System.out.print(a);
+        for (int i = 0; i < 30000000; i++) {
+            if (i % 100 == 0)
+                System.out.print(a);
         }
         System.out.println(a);
     }

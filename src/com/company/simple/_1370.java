@@ -37,31 +37,31 @@ package com.company.simple;
 
 public class _1370 {
     public String sortString(String s) {
-        int[] character=new int[26];
-        char[] temp_char=s.toCharArray();
-        for(char temp : temp_char){
-            character[((int)temp-97)]+=1;
+        int[] character = new int[26];
+        char[] temp_char = s.toCharArray();
+        for (char temp : temp_char) {
+            character[((int) temp - 97)] += 1;
         }
-        StringBuilder res= new StringBuilder();
-        int count=s.length();
-        while (count>0){
-            int i=0;
-            while(i<26){
-                if(character[i]>0){
-                    character[i]-=1;
-                    res.append((char)(i+97));
-                    count-=1;
+        StringBuilder res = new StringBuilder();
+        int count = s.length();
+        while (count > 0) {
+            int i = 0;
+            while (i < 26) {
+                if (character[i] > 0) {
+                    character[i] -= 1;
+                    res.append((char) (i + 97));
+                    count -= 1;
                 }
-                i+=1;
+                i += 1;
             }
-            i-=1;
-            while(i>=0){
-                if(character[i]>0){
-                    character[i]-=1;
-                    res.append((char)(i+97));
-                    count-=1;
+            i -= 1;
+            while (i >= 0) {
+                if (character[i] > 0) {
+                    character[i] -= 1;
+                    res.append((char) (i + 97));
+                    count -= 1;
                 }
-                i-=1;
+                i -= 1;
             }
         }
         return res.toString();

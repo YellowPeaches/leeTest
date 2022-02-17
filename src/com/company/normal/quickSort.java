@@ -5,13 +5,13 @@ import java.util.HashMap;
 public class quickSort {
     public static void main(String[] args) {
 
-        HashMap<String,String> data = new HashMap<>();
-        data.put("sss","aa");
+        HashMap<String, String> data = new HashMap<>();
+        data.put("sss", "aa");
 
-        int[] arr = {129,97,9,1,122,8};
-        sort(arr,0,arr.length-1);
+        int[] arr = {129, 97, 9, 1, 122, 8};
+        sort(arr, 0, arr.length - 1);
         for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i]+" ");
+            System.out.print(arr[i] + " ");
         }
     }
 
@@ -23,22 +23,22 @@ public class quickSort {
         int i = left;
         int j = right;
         while (i != j) {
-            while (array[j]>=base&&i<j){
+            while (array[j] >= base && i < j) {
                 j--;
             }
-            while (array[i]<=base&&i<j){
+            while (array[i] <= base && i < j) {
                 i++;
             }
-            if(i<j){
-                int temp=array[i];
-                array[i]=array[j];
-                array[j]=temp;
+            if (i < j) {
+                int temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
             }
-            array[left]=array[i];
-            array[i]=base;
+            array[left] = array[i];
+            array[i] = base;
 
-            sort(array,left,i-1);
-            sort(array,i+1,right);
+            sort(array, left, i - 1);
+            sort(array, i + 1, right);
 
         }
     }

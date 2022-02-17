@@ -11,9 +11,9 @@ public class _55 {
             return true;
         }
         int cover = 0;
-        for (int i = 0; i <=cover ; i++) {
-            cover=Math.max(i+nums[i],cover);
-            if(cover>=len){
+        for (int i = 0; i <= cover; i++) {
+            cover = Math.max(i + nums[i], cover);
+            if (cover >= len) {
                 return true;
             }
         }

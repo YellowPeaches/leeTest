@@ -23,7 +23,7 @@ package com.company.simple;
 public class _349 {
     public static void main(String[] args) {
         int sum1[] = new int[]{1, 1, 1, 2};
-        int sum2[] = new int[]{4, 1, 99, 22,2};
+        int sum2[] = new int[]{4, 1, 99, 22, 2};
         new Solution().intersection(sum1, sum2);
     }
 

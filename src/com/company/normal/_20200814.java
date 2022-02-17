@@ -5,57 +5,57 @@ import java.util.Stack;
 public class _20200814 {
     public static void main(String[] args) {
         String s = "(([])){}";
-        int gg =3;
-        String s1="mississippi";
-        String nee="sipp";
-        int yuan[]={3,2,2,4,4,4,4,4,4,23};
+        int gg = 3;
+        String s1 = "mississippi";
+        String nee = "sipp";
+        int yuan[] = {3, 2, 2, 4, 4, 4, 4, 4, 4, 23};
         Solution solution = new Solution();
 
         //System.out.println(solution.isValid(s));
         //System.out.println(solution.firstUniqChar("cca"));
-        System.out.println(solution.strStr(s1,nee));
+        System.out.println(solution.strStr(s1, nee));
     }
+
     static class Solution {
         public int strStr(String haystack, String needle) {
             //return haystack.indexOf(needle);
-            int len =haystack.length();
-            int len2=needle.length();
-            int ans=-1;
-            if(len2==0||needle==null){
-                ans= 0;
-            }
-            else if(haystack.contains(needle)){
-                for (int i = 0; i <=len-len2; i++) {
-                    if(haystack.charAt(i)==needle.charAt(0)){
-                       // System.out.println(i);
-                        String temp=haystack.substring(i,i+len2);
-                        if(temp.equals(needle)){
-                            ans=i;
+            int len = haystack.length();
+            int len2 = needle.length();
+            int ans = -1;
+            if (len2 == 0 || needle == null) {
+                ans = 0;
+            } else if (haystack.contains(needle)) {
+                for (int i = 0; i <= len - len2; i++) {
+                    if (haystack.charAt(i) == needle.charAt(0)) {
+                        // System.out.println(i);
+                        String temp = haystack.substring(i, i + len2);
+                        if (temp.equals(needle)) {
+                            ans = i;
                             break;
                         }
                     }
                 }
-            }
-            else {
+            } else {
                 return ans;
             }
-             return ans;
+            return ans;
         }
+
         public int removeElement(int[] nums, int val) {
-            int len=nums.length;
-            int k=0;
-            if(len==0||nums==null) {
-                k=0;
-            }
-            else {
-                for(int i=0;i<len;i++){
-                    if(nums[i]!=val){
-                        nums[k++]=nums[i];
+            int len = nums.length;
+            int k = 0;
+            if (len == 0 || nums == null) {
+                k = 0;
+            } else {
+                for (int i = 0; i < len; i++) {
+                    if (nums[i] != val) {
+                        nums[k++] = nums[i];
                     }
                 }
             }
             return k;
         }
+
         public boolean isValid(String s) {
             Stack<Character> stack = new Stack<Character>();
             for (char c : s.toCharArray()) {

@@ -7,7 +7,7 @@ public class _12 {
     public static void main(String[] args) {
         String s = intToRoman(3210);
         System.out.println(s);
-        String str="/9KgFNLnjp1OR1biYRAny0s0uFjySgmJiUttPykYJwhBjBOQoPNcw0UcshmlXzXihWRDITIu5vOVg8blo5EIVf3citHxnbkmiisZfDT85K/hS9f1MV4kkA3r0cONpKYaNElT7hXhXhiIX7uECkFSQceYCTCuMhyQ3YkB/nrDfvuzqp6LTv8Aojir2eaR7id5HaWO9+yo7HJSBgWKIPuphmJR1AeM4KMu1ccjqX+jwfaISUnnYCScEmYh4bp3C2";
+        String str = "/9KgFNLnjp1OR1biYRAny0s0uFjySgmJiUttPykYJwhBjBOQoPNcw0UcshmlXzXihWRDITIu5vOVg8blo5EIVf3citHxnbkmiisZfDT85K/hS9f1MV4kkA3r0cONpKYaNElT7hXhXhiIX7uECkFSQceYCTCuMhyQ3YkB/nrDfvuzqp6LTv8Aojir2eaR7id5HaWO9+yo7HJSBgWKIPuphmJR1AeM4KMu1ccjqX+jwfaISUnnYCScEmYh4bp3C2";
         System.out.println(str.length());
     }
 
@@ -30,8 +30,8 @@ public class _12 {
         }
         num %= 10;
         list.add(ge[num]);
-        String ans= list.toString().replace(", ","");
-        return ans.substring(1,ans.length()-1).trim();
+        String ans = list.toString().replace(", ", "");
+        return ans.substring(1, ans.length() - 1).trim();
     }
 }
 

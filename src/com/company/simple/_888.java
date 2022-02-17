@@ -38,6 +38,7 @@ public class _888 {
         return ans;
 
     }
+
     public static int[] fairCandySwap2(int[] A, int[] B) {
         int sumA = Arrays.stream(A).sum();
         int sumB = Arrays.stream(B).sum();

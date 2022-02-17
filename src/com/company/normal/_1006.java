@@ -7,6 +7,7 @@ public class _1006 {
     public static void main(String[] args) {
         System.out.println(new Solution().clumsy(0));
     }
+
     static class Solution {
         public int clumsy(int N) {
             if (N == 1) {
