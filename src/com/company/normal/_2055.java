@@ -1,12 +1,42 @@
 package com.company.normal;
+import java.util.*;
 
 public class _2055 {
     public static void main(String[] args) {
-        int[][] queries = {{2, 5}, {5, 9}};
-        String s = "**|**|*********||||||******|";
-        int ans[] = platesBetweenCandles(s, queries);
-        for (int i = 0; i < ans.length; i++) {
-            System.out.println(ans[i]);
+//        int[][] queries = {{2, 5}, {5, 9}};
+//        String s = "**|**|*********||||||******|";
+//        int ans[] = platesBetweenCandles(s, queries);
+//        for (int i = 0; i < ans.length; i++) {
+//            System.out.println(ans[i]);
+//        }
+        Scanner in = new Scanner(System.in);
+        // 注意 hasNext 和 hasNextLine 的区别
+        while (in.hasNextLine()) { // 注意 while 处理多个 case
+            String s = in.nextLine();
+            StringBuilder sb =new StringBuilder();
+            //10->2
+            if(s.contains(".")){
+                String[] temp = s.split("\\.");
+                for(int i=0;i<temp.length;i++){
+                    int a=Integer.parseInt(temp[i]);
+                    String num =Integer.toBinaryString(a);
+                    while(num.length()<8){
+                        num="0"+ num;
+                    }
+                    sb.append(num);
+                }
+                System.out.println(Long.parseLong(sb.toString(), 2));
+            }else{
+                String num2 = Long.toBinaryString(Long.parseLong(s));
+                while(num2.length()<32){
+                    num2="0"+num2;
+                }
+                String[] ss =new String[4];
+                for(int i=0;i<4;i++){
+                    ss[i]=Integer.toString(Integer.parseInt(num2.substring(8*i, 8*i+8), 2));
+                }
+                System.out.println(ss[0]+"."+ss[1]+"."+ss[2]+"."+ss[3]);
+            }
         }
     }
 
