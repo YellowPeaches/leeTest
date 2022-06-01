@@ -5,8 +5,8 @@ import java.util.HashMap;
 public class quickSort {
     public static void main(String[] args) {
 
-        HashMap<String, String> data = new HashMap<>();
-        data.put("sss", "aa");
+        HashMap<String, String> dataMap = new HashMap<>();
+        dataMap.put("sss", "19");
 
         int[] arr = {129, 97, 9, 1, 122, 8};
         sort(arr, 0, arr.length - 1);
