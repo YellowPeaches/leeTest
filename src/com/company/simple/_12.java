@@ -5,10 +5,14 @@ import java.util.List;
 
 public class _12 {
     public static void main(String[] args) {
-        String s = intToRoman(3210);
-        System.out.println(s);
-        String str = "/9KgFNLnjp1OR1biYRAny0s0uFjySgmJiUttPykYJwhBjBOQoPNcw0UcshmlXzXihWRDITIu5vOVg8blo5EIVf3citHxnbkmiisZfDT85K/hS9f1MV4kkA3r0cONpKYaNElT7hXhXhiIX7uECkFSQceYCTCuMhyQ3YkB/nrDfvuzqp6LTv8Aojir2eaR7id5HaWO9+yo7HJSBgWKIPuphmJR1AeM4KMu1ccjqX+jwfaISUnnYCScEmYh4bp3C2";
-        System.out.println(str.length());
+//        String s = intToRoman(3210);
+//        System.out.println(s);
+//        String str = "/9KgFNLnjp1OR1biYRAny0s0uFjySgmJiUttPykYJwhBjBOQoPNcw0UcshmlXzXihWRDITIu5vOVg8blo5EIVf3citHxnbkmiisZfDT85K/hS9f1MV4kkA3r0cONpKYaNElT7hXhXhiIX7uECkFSQceYCTCuMhyQ3YkB/nrDfvuzqp6LTv8Aojir2eaR7id5HaWO9+yo7HJSBgWKIPuphmJR1AeM4KMu1ccjqX+jwfaISUnnYCScEmYh4bp3C2";
+//        System.out.println(str.length());
+        float[] arr = new float[3];
+        arr[0]=Float.valueOf("1=2");
+        System.out.println( arr);
+        System.out.println(arr[0]);
     }
 
     public static String intToRoman(int num) {

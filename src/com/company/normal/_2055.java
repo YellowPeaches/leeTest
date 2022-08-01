@@ -1,6 +1,8 @@
 package com.company.normal;
 import java.util.*;
 
+import java.util.Stack;
+
 public class _2055 {
     public static void main(String[] args) {
 //        int[][] queries = {{2, 5}, {5, 9}};
@@ -38,6 +40,7 @@ public class _2055 {
                 System.out.println(ss[0]+"."+ss[1]+"."+ss[2]+"."+ss[3]);
             }
         }
+        Stack stack ;
     }
 
     public static int[] platesBetweenCandles(String s, int[][] queries) {
