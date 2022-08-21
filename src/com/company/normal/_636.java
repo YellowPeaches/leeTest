@@ -14,7 +14,7 @@ public class _636 {
         for (int i = 1; i < len; i++) {
             String[] lastTemp = logs.get(i-1).split(":");
             String[] temp = logs.get(i).split(":");
-            ans[Integer.parseInt(lastTemp[0])]= temp[Integer.parseInt(temp[2])]
+//            ans[Integer.parseInt(lastTemp[0])]= temp[Integer.parseInt(temp[2])];
 
         }
 
