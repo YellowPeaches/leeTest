@@ -1,7 +1,12 @@
 package com.company.test;
 
 
-import java.util.*;
+import com.company.Singleton;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
 
 public class dfs {
     static int[] book = new int[10];
@@ -10,6 +15,28 @@ public class dfs {
 
     public static void main(String[] args) {
         System.out.println("8B900A88-0935-49B2-9B6F-39CBF5BDDEEA ".length());
+
+        String s ="abcdefg123";
+        String temp = s.substring(0,3);
+        System.out.println(temp);
+        System.out.println(Singleton.getInstance().getName());
+
+        char c ='ע';
+        char c2 ='כ';
+        char c3 ='ב';
+        char c4 ='ה';
+        char c5 ='נ';
+        char c6 ='ת';
+        char c7 ='\'';
+        System.out.println((int)c);
+        System.out.println((int)c2);
+        System.out.println((int)c3);
+        System.out.println((int)c4);
+        System.out.println((int)c5);
+        System.out.println((int)c6);
+        System.out.println((int)c7);
+
+
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         dfs(n, 1);
